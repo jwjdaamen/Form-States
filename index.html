@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form States</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <div>
+    <form action="http://www.transavia.com">
+      <fieldset>
+        <legend>Personalia</legend>
+        <label for="name">Voornaam</label>
+        <input id="name" required>
+
+        <label for="surname">Achternaam</label>
+        <input id="surname" required>
+        <p class="feedback">Dit gedeelte van het formulier is goed ingevuld.</p>
+       </fieldset>
+      <fieldset>
+        <legend>Online</legend>
+        <label for="url">Website url</label>
+        <input id="url" type="url" placeholder="http://" required>
+        <p class="tooltip">http://</p>
+
+        <label for="mail">E-mail</label>
+        <input id="mail" type="email" required>
+        <p class="feedback">Dit gedeelte van het formulier is goed ingevuld.</p>
+      </fieldset>
+      <button>Verstuur</button>
+    </form>
+  </div>
+</body>
+</html>
